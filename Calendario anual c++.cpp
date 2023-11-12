@@ -2,8 +2,23 @@
 #include <fstream>
 
 using namespace std;
+//Prototipos
+void diaSemana (int dia, int mes, int ano, int &ds);
+bool ehBissexto(int ano);
+int diasNoMes(int mes, int ano);
+void Gerar_Html (int mes, int ano);
 
+//main
+int main (){
+   
+   int ano;
+   cout << "INSIRA UM ANO: ";
+   cin >> ano;
+	
+    return 0;
+}
 
+//funçoes
 void diaSemana (int dia, int mes, int ano, int &ds) {
 	int f;
 
@@ -141,19 +156,4 @@ void Gerar_Html (int mes, int ano){
     fout.close ();
     
     system ("calendario.html");
-}
-
-
-int main (){
-   
-   int ano;
-   cout << "INSIRA UM ANO: ";
-   cin >> ano;
-
-   
-
-
-
-    
-    return 0;
 }
