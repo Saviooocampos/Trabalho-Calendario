@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 void diaSemana (int dia, int mes, int ano, int &ds) {
 	int f;
 
@@ -18,7 +17,6 @@ void diaSemana (int dia, int mes, int ano, int &ds) {
 	f=f % 7;
 	
 	ds = f;
-
 }
 
 bool ehBissexto(int ano) {
@@ -142,7 +140,6 @@ void Gerar_Html (int mes, int ano){
     
     system ("calendariomes.html");
 }
-
 
 int main (){
    
